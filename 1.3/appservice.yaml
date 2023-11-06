@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: appservice
+spec:
+  selector:
+    app: nginxapp
+  ports:
+    - name: web
+      port: 80
